@@ -10,6 +10,7 @@
 namespace ToolBox
 {
     // ***********************************************************************
+	// @private
     typedef void (*ISR_FUNCTION)();
     
     /**

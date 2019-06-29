@@ -101,7 +101,7 @@ namespace ToolBox
 
 	/**
 	 * Fügt der Timeline eine Funktion hinzu
-	 * @param ulDelay Millisekunden zwischen zwei Funktionsaufrufen
+	 * @param uiDelay Millisekunden zwischen zwei Funktionsaufrufen
 	 * @param rFunction aufzurufende Funktion
 	 * @param bSingleShot true: Funktion nur einmal ausführen, dann deaktivieren; false: Funktion wiederholt ausführen
 	 * @return Index des Eintrages (damit kann der Eintrag später geändert werden)
