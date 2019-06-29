@@ -18,9 +18,9 @@ namespace ToolBox
     class InterruptDriven::InterruptHandler
     {
     public:
-        static void             start(InterruptDriven*,
-                                      uint8_t);
-        static void             stop(InterruptDriven*);                                     
+        static void             attach(InterruptDriven*,
+                                       uint8_t);
+        static void             detach(InterruptDriven*);                                     
         static void             interruptProc(uint8_t);
     
     private:
@@ -91,10 +91,10 @@ namespace ToolBox
      * @param uiMode mode; could be LOW, CHANGE, RISING, FALLING or HIGH
      */
     void
-    InterruptDriven::InterruptHandler::start(InterruptDriven* pObject,
-                                             uint8_t uiMode)
+    InterruptDriven::InterruptHandler::attach(InterruptDriven* pObject,
+                                              uint8_t uiMode)
     {
-        if ((!pObject) || (pObject->m_bStarted))
+        if ((!pObject) || (pObject->m_bAttached))
             return;
         
         uint8_t const uiInterrupt = digitalPinToInterrupt(pObject->m_uiInterruptPin);
@@ -103,16 +103,16 @@ namespace ToolBox
         
         attachInterrupt(uiInterrupt, cm_ISRFunctions[uiInterrupt], uiMode);
         cm_InterruptDriven[uiInterrupt] = pObject;
-        pObject->m_bStarted = true;
+        pObject->m_bAttached = true;
     }                                         
 
     /**
      * detach object from interrupt
      */
     void
-    InterruptDriven::InterruptHandler::stop(InterruptDriven* pObject)
+    InterruptDriven::InterruptHandler::detach(InterruptDriven* pObject)
     {
-        if ((!pObject) || (!pObject->m_bStarted))
+        if ((!pObject) || (!pObject->m_bAttached))
             return;
         
         uint8_t const uiInterrupt = digitalPinToInterrupt(pObject->m_uiInterruptPin);
@@ -121,7 +121,7 @@ namespace ToolBox
         
         detachInterrupt(uiInterrupt);
         cm_InterruptDriven[uiInterrupt] = nullptr;
-        pObject->m_bStarted = false;
+        pObject->m_bAttached = false;
     }
 
     /**
@@ -199,7 +199,7 @@ namespace ToolBox
      */
     InterruptDriven::~InterruptDriven()
     {
-        stop();
+        detach();
     }
                                     
     /**
@@ -208,28 +208,28 @@ namespace ToolBox
      * @return true, on success; false, otherwise
      */
     bool
-    InterruptDriven::start(uint8_t uiMode)
+    InterruptDriven::attach(uint8_t uiMode)
     {
-        InterruptHandler::start(this, uiMode);        
-        return m_bStarted;
+        InterruptHandler::attach(this, uiMode);        
+        return m_bAttached;
     }
 
     /**
      * detach object from interrupt
      */
     void
-    InterruptDriven::stop()
+    InterruptDriven::detach()
     {
-        InterruptHandler::stop(this);
+        InterruptHandler::detach(this);
     }
     
     /**
-     * @return true, when start() has been successfully called; false, otherwise
+     * @return true, when object is attached to interrupt; false, otherwise
      */
     bool
-    InterruptDriven::isStarted() const
+    InterruptDriven::isAttached() const
     {
-        return m_bStarted;
+        return m_bAttached;
     }
         
     /**

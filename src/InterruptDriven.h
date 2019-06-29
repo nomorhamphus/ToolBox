@@ -10,24 +10,23 @@ namespace ToolBox
      */
     class InterruptDriven
     {
-    public:        
-        bool                    start(uint8_t);
-        void                    stop();
-        
-        bool                    isStarted() const;
-        
     protected:
                                 InterruptDriven(uint8_t);
                                 ~InterruptDriven();
                                 
+        bool                    attach(uint8_t);
+        void                    detach();
+        
+        bool                    isAttached() const;        
+    
         virtual void            handleInterrupt() = 0;
                                             
         //! used pin
         uint8_t const           m_uiInterruptPin;
         
     private:
-        //! flag "start has been called"
-        bool                    m_bStarted = false;
+        //! flag "object is attached to interrupt"
+        bool                    m_bAttached = false;
         
         class InterruptHandler;
         friend class InterruptHandler;
