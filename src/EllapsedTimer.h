@@ -5,6 +5,9 @@
 
 namespace ToolBox
 {
+	/**
+	 * computes ellapsed time
+	 */
 	class EllapsedTimer final
 	{
 	public:

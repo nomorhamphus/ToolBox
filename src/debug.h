@@ -3,20 +3,17 @@
 // * Debug-Macros
 // *
 // ************************************************************************
-#ifndef DEBUG_H_INCLUDED
-#define DEBUG_H_INCLUDED
+#pragma once
 
-#define DEBUGGING_ACTIVE
+//#define TOOLBOX_DEBUGGING_ACTIVE
 
-#ifdef DEBUGGING_ACTIVE
-#   define DEBUG_BEGIN(o) Serial.begin(o); while (!Serial);
-#   define DEBUG_PRINT(o) Serial.print(o)
-#   define DEBUG_PRINTLN(o) Serial.println(o)
+#ifdef TOOLBOX_DEBUGGING_ACTIVE
+#   define TOOLBOX_DEBUG_BEGIN(o) Serial.begin(o); while (!Serial);
+#   define TOOLBOX_DEBUG_PRINT(o) Serial.print(o)
+#   define TOOLBOX_DEBUG_PRINTLN(o) Serial.println(o)
 #else
-#   define DEBUG_BEGIN(o)
-#   define DEBUG_PRINT(o)
-#   define DEBUG_PRINTLN(o)
+#   define TOOLBOX_DEBUG_BEGIN(o)
+#   define TOOLBOX_DEBUG_PRINT(o)
+#   define TOOLBOX_DEBUG_PRINTLN(o)
 #endif
 
-
-#endif

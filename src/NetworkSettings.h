@@ -20,8 +20,8 @@ namespace ToolBox
 		bool                	operator == (NetworkSettings const&) const;
 		bool                	operator != (NetworkSettings const&) const;
 		
-		void					write(ToolBox::EEPROMStorage&) const;
-		void					read(ToolBox::EEPROMStorage&);		
+		void					write(EEPROMStorage&) const;
+		void					read(EEPROMStorage&);		
 		
 		//! Hostname
 		String              	m_sHostName;

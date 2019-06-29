@@ -1,0 +1,157 @@
+#######################################
+# Syntax coloring map for ToolBox
+#######################################
+
+#######################################
+# classes
+#######################################
+Date	KEYWORD1
+DateTime	KEYWORD1
+EEPROMStorage	KEYWORD1
+EllapsedTimer	KEYWORD1
+EnumTranslator	KEYWORD1
+InterruptDriven	KEYWORD1
+InterruptLock	KEYWORD1
+MimeTypes	KEYWORD1
+NetworkSettings	KEYWORD1
+Time	KEYWORD1
+Timeline	KEYWORD1
+
+#######################################
+# Date members
+#######################################
+isValid	KEYWORD2
+getDaysPerMonth	KEYWORD2
+isLeapYear	KEYWORD2
+getDayInMonth	KEYWORD2
+getMonthInYear	KEYWORD2
+getYear	KEYWORD2
+getDayOfWeek	KEYWORD2
+addDays	KEYWORD2
+getDaysTo	KEYWORD2
+toString	KEYWORD2
+
+#######################################
+# DateTime members
+#######################################
+getDate	KEYWORD2
+getTime	KEYWORD2
+isValid	KEYWORD2
+toString	KEYWORD2
+
+#######################################
+# EEPROMStorage members
+#######################################
+isValid	KEYWORD2
+begin	KEYWORD2
+wipe	KEYWORD2
+readUInt8	KEYWORD2
+writeUInt8	KEYWORD2
+readInt8	KEYWORD2
+writeInt8	KEYWORD2
+readUInt16	KEYWORD2
+writeUInt16	KEYWORD2
+readInt16	KEYWORD2
+writeInt16	KEYWORD2
+readUInt32	KEYWORD2
+writeUInt32	KEYWORD2
+readInt32	KEYWORD2
+writeInt32	KEYWORD2
+readUInt64	KEYWORD2
+writeUInt64	KEYWORD2
+readInt64	KEYWORD2
+writeInt64	KEYWORD2
+readBool	KEYWORD2
+writeBool	KEYWORD2
+readString	KEYWORD2
+writeString	KEYWORD2
+readIP	KEYWORD2
+writeIP	KEYWORD2
+readTime	KEYWORD2
+writeTime	KEYWORD2
+readDate	KEYWORD2
+writeDate	KEYWORD2
+readDateTime	KEYWORD2
+writeDateTime	KEYWORD2
+readEnum	KEYWORD2
+writeEnum	KEYWORD2
+
+#######################################
+# EllapsedTimer members
+#######################################
+setMillisToEllapse	KEYWORD2
+getMillisToEllapse	KEYWORD2
+restart	KEYWORD2
+getEllapsedMillis	KEYWORD2
+isEllapsed	KEYWORD2
+
+#######################################
+# EnumTranslator members
+#######################################
+getText	KEYWORD2
+getEnum	KEYWORD2
+store	KEYWORD2
+
+#######################################
+# InterruptDriven members
+#######################################
+attach	KEYWORD2
+detach	KEYWORD2
+isAttached	KEYWORD2
+handleInterrupt	KEYWORD2
+
+#######################################
+# InterruptLock members
+#######################################
+lock	KEYWORD2
+unlock	KEYWORD2
+
+#######################################
+# MimeTypes members
+#######################################
+getMimeType	KEYWORD2
+getMimeType	KEYWORD2
+
+#######################################
+# NetworkSettings members
+#######################################
+write	KEYWORD2
+read	KEYWORD2
+m_sHostName	KEYWORD2
+m_sSSID	KEYWORD2
+m_sPassword	KEYWORD2
+m_bConnectToWlan	KEYWORD2
+m_sAccessPoint	KEYWORD2
+m_sAccessPointPassword	KEYWORD2
+m_sNtpServer	KEYWORD2
+m_bUseFixedIP	KEYWORD2
+m_FixedIP	KEYWORD2
+m_Gateway	KEYWORD2
+m_DNS	KEYWORD2
+m_Subnet	KEYWORD2
+
+#######################################
+# Time members
+#######################################
+isValid	KEYWORD2
+getHours	KEYWORD2
+getMinutes	KEYWORD2
+getSeconds	KEYWORD2
+getMilliSeconds	KEYWORD2
+addHours	KEYWORD2
+addMinutes	KEYWORD2
+addSeconds	KEYWORD2
+addMilliSeconds	KEYWORD2
+getMilliSecondsTo	KEYWORD2
+toString	KEYWORD2
+
+#######################################
+# TimeLine members
+#######################################
+update	KEYWORD2
+addTimerFunction	KEYWORD2
+clear	KEYWORD2
+setEnabled	KEYWORD2
+isEnabled	KEYWORD2
+setDelay	KEYWORD2
+getDelay	KEYWORD2

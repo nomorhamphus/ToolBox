@@ -7,7 +7,7 @@
 namespace ToolBox
 {
 	/**
-	 * Verwaltung zeitgesteuerter Aufgaben
+	 * template to shedule tasks
 	 */
 	template<uint32_t SLOTS>
 	class Timeline final

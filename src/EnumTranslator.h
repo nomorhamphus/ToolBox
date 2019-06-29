@@ -5,7 +5,7 @@
 namespace ToolBox
 {
 	/**
-	 * Verwaltung zeitgesteuerter Aufgaben
+	 * template class to translate enums into text and back
 	 */
 	template<typename TEnum, uint32_t TCount = (static_cast<uint32_t>(TEnum::Last) - static_cast<uint32_t>(TEnum::First) + 1)>
 	class EnumTranslator
@@ -23,7 +23,7 @@ namespace ToolBox
 		}
 		
 		/**
-		 * getenum for text
+		 * get enum for text
 		 */
 		TEnum					getEnum(String const& rsText)
 		{
