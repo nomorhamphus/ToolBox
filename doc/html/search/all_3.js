@@ -5,7 +5,6 @@ var searchData=
   ['datetime_2ecpp',['DateTime.cpp',['../_date_time_8cpp.html',1,'']]],
   ['datetime_2eh',['DateTime.h',['../_date_time_8h.html',1,'']]],
   ['dayofweek',['DayOfWeek',['../namespace_tool_box.html#a2c2151b461bfd1e866ae50519350a853',1,'ToolBox']]],
-  ['debug_2eh',['debug.h',['../debug_8h.html',1,'']]],
   ['december',['December',['../namespace_tool_box.html#a02b7f221324576ea6af4c3a320dfd804a82331503174acbae012b2004f6431fa5',1,'ToolBox']]],
   ['detach',['detach',['../class_tool_box_1_1_interrupt_driven_1_1_interrupt_handler.html#af50500422627c694a81684b655720cd1',1,'ToolBox::InterruptDriven::InterruptHandler::detach()'],['../class_tool_box_1_1_interrupt_driven.html#adc63314ba18bee0e1137f56f9f6a2544',1,'ToolBox::InterruptDriven::detach()']]]
 ];

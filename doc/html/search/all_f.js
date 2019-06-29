@@ -11,7 +11,6 @@ var searchData=
   ['readint64',['readInt64',['../class_tool_box_1_1_e_e_p_r_o_m_storage.html#a7fe2787e0f15d0e2a106947535b4d30a',1,'ToolBox::EEPROMStorage']]],
   ['readint8',['readInt8',['../class_tool_box_1_1_e_e_p_r_o_m_storage.html#ab3ace526b98313e6c49351394bda2427',1,'ToolBox::EEPROMStorage']]],
   ['readip',['readIP',['../class_tool_box_1_1_e_e_p_r_o_m_storage.html#a0d3150117df81c9b18e62fb0898c0f2a',1,'ToolBox::EEPROMStorage']]],
-  ['readme_2emd',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
   ['readstring',['readString',['../class_tool_box_1_1_e_e_p_r_o_m_storage.html#a0bebe0d304a5716d2db23897524af07f',1,'ToolBox::EEPROMStorage']]],
   ['readtime',['readTime',['../class_tool_box_1_1_e_e_p_r_o_m_storage.html#a0e8315994cfd304dd88b24fb2d7574d8',1,'ToolBox::EEPROMStorage']]],
   ['readuint16',['readUInt16',['../class_tool_box_1_1_e_e_p_r_o_m_storage.html#ad6f97e4eacd55e8354241372ca3025a1',1,'ToolBox::EEPROMStorage']]],

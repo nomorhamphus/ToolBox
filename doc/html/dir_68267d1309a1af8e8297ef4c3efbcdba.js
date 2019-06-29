@@ -2,7 +2,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
 [
     [ "DateTime.cpp", "_date_time_8cpp.html", null ],
     [ "DateTime.h", "_date_time_8h.html", "_date_time_8h" ],
-    [ "debug.h", "debug_8h.html", "debug_8h" ],
     [ "EepromStorage.cpp", "_eeprom_storage_8cpp.html", "_eeprom_storage_8cpp" ],
     [ "EepromStorage.h", "_eeprom_storage_8h.html", "_eeprom_storage_8h" ],
     [ "EllapsedTimer.cpp", "_ellapsed_timer_8cpp.html", null ],
@@ -29,5 +28,6 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "TimeLine.h", "_time_line_8h.html", [
       [ "Timeline", "class_tool_box_1_1_timeline.html", "class_tool_box_1_1_timeline" ]
     ] ],
-    [ "ToolBox.h", "_tool_box_8h.html", null ]
+    [ "ToolBox.h", "_tool_box_8h.html", null ],
+    [ "ToolBoxDebug.h", "_tool_box_debug_8h.html", "_tool_box_debug_8h" ]
 ];
