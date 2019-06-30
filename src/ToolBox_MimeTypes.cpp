@@ -1,4 +1,4 @@
-#include "MimeTypes.h"
+#include "ToolBox_MimeTypes.h"
 
 namespace ToolBox
 {

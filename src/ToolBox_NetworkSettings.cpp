@@ -1,5 +1,5 @@
-#include "NetworkSettings.h"
-#include "EepromStorage.h"
+#include "ToolBox_NetworkSettings.h"
+#include "ToolBox_EepromStorage.h"
 
 #if defined(ESP8266)
 #	include <ESP8266WiFi.h>
