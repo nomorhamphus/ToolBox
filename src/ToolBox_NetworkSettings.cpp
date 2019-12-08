@@ -13,7 +13,7 @@
 namespace ToolBox
 {
 	//! current EEPROM version
-	uint16_t const NetworkSettings::cm_uiEEPROMVersion = 0;
+	uint16_t const NetworkSettings::cm_uiEEPROMVersion = 1;
 	
 	/**
 	 * ctor 
@@ -42,6 +42,7 @@ namespace ToolBox
 			   (m_sAccessPoint == rOther.m_sAccessPoint) &&
 			   (m_sAccessPointPassword == rOther.m_sAccessPointPassword) &&
 			   (m_sNtpServer == rOther.m_sNtpServer) &&
+			   (m_iTimeOffsetSeconds == rOther.m_iTimeOffsetSeconds) &&
 			   (m_bUseFixedIP == rOther.m_bUseFixedIP) &&
 			   (m_FixedIP == rOther.m_FixedIP) &&
 			   (m_Gateway == rOther.m_Gateway) &&
@@ -72,6 +73,7 @@ namespace ToolBox
 				 << m_sAccessPoint					// since Version 0
 				 << m_sAccessPointPassword			// since Version 0
 				 << m_sNtpServer					// since Version 0
+				 << m_iTimeOffsetSeconds			// since Version 1
 				 << m_bUseFixedIP					// since Version 0
 				 << m_FixedIP						// since Version 0
 				 << m_Gateway						// since Version 0
@@ -94,8 +96,11 @@ namespace ToolBox
 				 >> m_bConnectToWlan				// since Version 0
 				 >> m_sAccessPoint					// since Version 0
 				 >> m_sAccessPointPassword			// since Version 0
-				 >> m_sNtpServer					// since Version 0
-				 >> m_bUseFixedIP					// since Version 0
+				 >> m_sNtpServer;					// since Version 0
+		if (uiVersion >= 1)
+			rStorage >> m_iTimeOffsetSeconds;				
+				
+		rStorage >> m_bUseFixedIP					// since Version 0
 				 >> m_FixedIP						// since Version 0
 				 >> m_Gateway						// since Version 0
 				 >> m_DNS							// since Version 0

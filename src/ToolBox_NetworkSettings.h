@@ -44,6 +44,9 @@ namespace ToolBox
 		//! NTP server
 		String              	m_sNtpServer;
 		
+		//! Time offset in seconds
+		int32_t				    m_iTimeOffsetSeconds = 7200;
+		
 		//! Flag "use fixed IP"
 		bool					m_bUseFixedIP = false;
 		
